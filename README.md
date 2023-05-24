@@ -11,5 +11,5 @@ Docker镜像: https://hub.docker.com/r/riba2534/ohttps-webhook
 
 
 ```
-docker run -p 8080:8080 -e CERT_KEY_PATH=/path/to/cert.key -e FULL_CHAIN_PATH=/path/to/fullchain.cer -e CALLBACK_TOKEN=your_callback_token -v /host/path:/path your_image_name
+docker run -p 4321:4321 -e TLS_PATH=/path -e CALLBACK_TOKEN=your_callback_token -v /host/path:/path riba2534/ohttps-webhook
 ```
